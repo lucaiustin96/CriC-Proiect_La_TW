@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cric-alert",
+  "private_key_id": "eff74ecca31421dc076a6c5f63b0323a28bcc29a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDdkYiIy+l1p/yz\ntsy3QrMzVZT3QILVBQJGb975+XYHiWAj5h1OHN27VIrS+89Ho6leUlBpoiJfoHbc\nF8qdhvm/jmokIoONjUzMIDw6IgFev7f/p+On+AHtbrW2Mgi1FaLlFDLGAgqCEPfM\n6k77fc6JOrSC9qkZfBNQlY1+2tLhtvEVKeN2a4Pd0dkYk2tm+3cGKmPOI5a9zCkc\nH5NBmmcK6GWCZs5IKjeD/Jlhy30ojnh7lAK1VXtHX7u8TgUsAC5kJBr30qxdDAv7\nCiM/ibKMyzxlWNCNTnowfRQwpOwJFR3x25pxX2LYRZSqqfM1RAGJfe3KWrnFOGj+\nzhe2c7Z7AgMBAAECggEAW7ANwA4h3f5WJEhRDsUbQvL3YhngCia4ek1xCCCjJxtC\nHZjsJ5bqasrhZ82sSQkA3XdSr2PYtZnBlfKCdg2U7CAS7EEcD0eZsB7mzWelCYBs\ns+7V1nxaz9Ywe+TYlZcOgZ2KJUZS8t/yq2mKpae6AC+64zcPYuxlUcOReh0zhxNY\nKlb8AkD6F0/1JaIjw56zPH4D1W7nwh5mTLsnnZcVx8z7jdU/CFAfRqpNFPG2wm4n\n4Rzmw08KvC7RXuOwcamFxSX5sSY0Ht+1LhuMiMOTKgulld4Lz8O0uxayCJG+CCzf\neG0F1HrnPuLdO1IyiZEKElJLE9n7bdQAojy1mw9eAQKBgQDyxRO49Hhxqnq29Ti+\n5qG2EX/RHQOLZPRQoEclWbWCnDdtmcp9S7AM/E/N+pBk60KbuEjZqyB/Od3ZqxPu\nR99EWL0ezj5MEO5nc/tZg6i9ae6aGN9z0P9OBMCb22Sqi/i/Tepa/AvDcRzyhG73\ncWDiRKkIaCgPp+ZlaqX34Okj0QKBgQDppKw7fLEauyy6BiLaqbXRnVuUeMOjk/1f\njYCjcJc61V4FGO7178xoPPl70PcFBOoytQ0ppFs22XZG09wnTZsuLDdrtUkcvOag\n7GTGrCubJK96kBoyKkP0JjDxd81B/81Ou2KwkUK/VFXUKIBT22ocXhaepHQRf38v\n7GJ/9+4EiwKBgQDYt6WLjnGWxqEVgoNNp4Tki2qWulfXsB+JegsJBLRMDDhO1uM0\nRsS6UuLK9crAzGOBr1kZNvKjoHyzO01ngTGGSdFKFsL2FIc+QwM2PZn8vPwLA/k1\n4nSGqSdn+so6lQlRfbSf1DCMIAW/WQnWSpg6ZSCgKJranv/FuRa/2T9GgQKBgQC/\niGQ82+pfzINM+EzITomjjckOfLV8uoviMiD7WwhOja1mplr2uB8scJfg3ZwyvCW1\nbeCde4PfAgRI6dK3UZJeFpdUL6gA7AZwc3nluCyDIV7NLaab6zQLyOckfB6C9U18\nNncf4eUC7gLySkVw+RUSrjsC0DPqSEeepLzWxQuVIwKBgALav1rQOli7ObTssLI2\nmt1LXmRioCiQe8v13NDM9vaJmDJfs+IxPtN8zuYNlRSBxHi6qcc5rJJMt4H3WnKT\nAE9RWP56Fx69Ub6JMEMCYDgzZS2B1zmlfF7ijijXbTl1xpFJjl04GDj6RGLV8S31\ntWRwKheN6E/bvkC5MvZGoLrM\n-----END PRIVATE KEY-----\n",
+  "client_email": "fusiontables@cric-alert.iam.gserviceaccount.com",
+  "client_id": "102382634690014528059",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/fusiontables%40cric-alert.iam.gserviceaccount.com"
+}

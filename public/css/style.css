@@ -1,0 +1,1438 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+/*
+------------------------------------------------------------
+Menu
+------------------------------------------------------------
+1. Generale
+2. Home page
+3. Map page
+4. Persoane page
+5. Contact page
+6. Autentificare page
+7. Poze page
+8. Footer page
+9. Localizare page
+------------------------------------------------------------
+*/
+
+/*Generale----------------------------------------*/
+.content-wrapper {
+	width: 1000px;
+	margin: auto;
+	padding: 10px;
+}
+
+/*Home-page----------------------------------------*/
+.main-content {
+	width: 100%;
+	height: 600px;
+	display: block;
+	position: relative;
+	top: 50px;
+	background-image: url("../img/earth.jpg");
+    background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-attachment: fixed;
+}
+
+.site-info {
+
+	width: 450px;
+	height: 400px;
+	position: relative;
+	top: 100;
+	border-radius: 5px;
+	float: left;
+	padding: 10px;
+	color: #fff;
+}
+.login {
+	width: 350px;
+	height: 400px;
+	background-color: #fff;
+	position: relative;
+	top: 100;
+	color: #fff;
+}
+
+.site-info h1 {
+	font-size: 24px;
+	letter-spacing: 1px;
+	margin: center;
+	text-align: center;
+}
+
+.site-info p {
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-size: 18px;
+}
+
+.login {
+	width: 350px;
+	height: 250px;
+	background-color: #808080;
+	position: relative;
+	top: 100px;
+	border-radius: 5px;
+	float: right;
+	padding: 10px;
+}
+
+.login-lable {
+	display: block;
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+#button_conectare{
+	background-color: #a8001e;
+	height: 50px;
+	border-color: black;
+	font-size: 18px;
+}
+input[type=text] {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #a8001e;
+}
+
+input[type=password] {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #a8001e;
+}
+
+input[type=conectare] {
+    width: 100%;
+    background-color: #a8001e;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.articles-wrapper {
+	position: relative;
+	top: 50px;
+}
+
+.article1 {
+	width: 100%;
+	height: auto;
+	background-color: #0b164c;
+}
+
+.article2 {
+	width: 100%;
+	height: auto;
+	background-color: #4256b5;
+}
+
+.article3 {
+	width: 100%;
+	height: auto;
+	background-color: #0b164c;
+}
+
+.info {
+	height: 350px;
+	width: 330px;
+	display: inline-block;
+	position: relative;
+	top: 20px;
+	bottom: 20px;
+	overflow: hidden;
+	margin: auto;
+}
+
+.info img { 
+	height: 100%; 
+	width: auto;
+}
+
+.text{
+	width: 100%;
+	height: 100%;
+}
+.text h3 {
+	font-size: 19px;
+	color: white;
+	text-align: center;
+}
+
+.text p {
+	padding: 10px;
+	font-size: 17px;
+	color: white;
+	letter-spacing: 1px;
+}
+
+/*Map-page----------------------------------------*/
+
+.map-content {
+	min-height: 500px;
+	position: relative;
+	top: 50px;
+}
+
+/*Persoane-page----------------------------------------*/
+.persoane-content {
+	min-height: 500px;
+	position: relative;
+	top: 50px;
+}
+/*Persoane-page----------------------------------------*/
+.persoane-content {
+	width: 100%;
+	height: auto;
+	display: block;
+	position: relative;
+	top: 70px;
+	background-image: url("../img/earth.jpg");
+    background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-attachment: fixed;
+ 	background-color: black;
+}
+
+.prezentare {
+	color: white;
+	text-indent: 50px;
+	font-size: 23;
+}
+
+
+#looking_for {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+#finded {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-color: #a8001e;
+}
+
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-color: #a8001e;
+}
+input[type=tel] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-color: #a8001e;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #a8001e;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#first_button {
+	background-color: #a8001e;
+	height: 35px;
+	border-color: black;
+	color: white;
+	font-size: 18;
+}
+#second_button {
+	background-color: #a8001e;
+	height: 35px;
+	border-color: black;
+	color: white;
+	font-size: 18;
+}
+/*Contact-page----------------------------------------*/
+.contact-content {
+	min-height: 500px;
+	position: relative;
+	top: 50px;
+}
+
+/*Autentificare-page----------------------------------------*/
+
+.autentificare-content {
+	width: 100%;
+	height: 750px;
+	display: block;
+	position: relative;
+	top: 70px;
+	background-image: url("../img/earth.jpg");
+    background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-attachment: fixed;
+}
+.test{
+	width: 49.5%;
+	display: inline-block;
+}
+.inregistrare {
+	width: 450px;
+	height: 400px;
+	position: relative;
+	top: 100;
+	border-radius: 5px;
+	float: left;
+	padding: 10px;
+	color: #fff;
+}
+/*Persoane-page----------------------------------------*/
+.poze-content {
+	min-height: 500px;
+	position: relative;
+	top: 70px;
+}
+.inregistrare h3 {
+	font-size: 20px;
+	letter-spacing: 2px;
+	margin-top: 7px;
+	margin-bottom: 2px;
+	text-align: center;
+}
+
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+/*Persoane-page----------------------------------------*/
+.poze-content {
+	min-height: 500px;
+	position: relative;
+	top: 70px;
+}
+/*Info-page----------------------------------------*/
+
+	.info-content {
+		min-height: 950px;
+		position: relative;
+		top: 70px;
+	}
+
+	.tabel-titlu{
+		text-align: center;
+		font-size:30px;
+		padding: 10px;
+	}
+	.tabel0{
+		width: 1000px;
+		border: 1px solid black;
+	}
+	.tabel0 th{
+		padding: 10px;
+		width: 200px;
+	  text-align: left;
+	  border: 1px solid black;
+	}
+	.tabel0 td{
+		padding: 15px;
+	  border: 1px solid black;
+	}.tabel1{
+		width: 1000px;
+		border: 1px solid black;
+	}
+	.tabel1 th{
+		padding: 10px;
+		width: 200px;
+	  text-align: left;
+	  border: 1px solid black;
+	}
+	.tabel1 td{
+		padding: 15px;
+	  border: 1px solid black;
+	}
+	.tabel2{
+		width: 1000px;
+		border: 1px solid black;
+	}
+	.tabel2 th{
+		padding: 10px;
+		width: 200px;
+	  text-align: left;
+	  border: 1px solid black;
+	}
+	.tabel2 td{
+		padding: 15px;
+	  border: 1px solid black;
+	}
+	.tabel3{
+		width: 1000px;
+		border: 1px solid black;
+	}
+	.tabel3 th{
+		padding: 10px;
+		width: 200px;
+	  text-align: left;
+	  border: 1px solid black;
+	}
+	.tabel3 td{
+		padding: 15px;
+	  border: 1px solid black;
+	}
+/*Footer-page----------------------------------------*/
+#footer {
+	widows: 100%;
+	position: relative;
+	top: 50px;
+	background-color: #000;
+	color: #fff;
+}
+
+.footer-column {
+	height: auto;
+	width: 33%;
+	display: inline-block;
+	text-align: center;
+}
+
+.footer-column a {
+	text-decoration: none;
+
+}
+.footer-column span{
+	font-size: 35px;
+	padding: 10px; 
+	color: #fff;
+}
+
+.footer-column span:hover{
+	color: red;
+}
+.footer-text {
+	float: left;
+	text-align: center;
+	width: 100%;
+	height: 200px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.footer-menu ul {
+	list-style: none;
+	padding: 0;
+}
+
+.footer-menu li {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.footer-menu a {
+	padding: 5px;
+	margin: 5px;
+	display: block;
+	color: #fff;
+}
+
+.footer-menu a:hover {
+	background: #890000;
+}
+
+/*Profil page----------------------------------------*/
+.profil-content {
+	min-height: 550px;
+	position: relative;
+	top: 50px;
+}
+
+.stanga {
+	width: 250px;
+	height: 100%;
+	/*background-color: red;*/
+	display: inline-block;
+	float: left;
+}
+
+.poza {
+	width: 250px;
+	height: 200px;
+	background-color: #000;
+	margin: auto;
+}
+
+.nume{
+	display: block;
+	background-color: #ccced1;
+	text-align: center;
+	margin-top: 10px;
+	padding: 15px;
+}
+
+.nume h3{
+	font-size: 20px
+}
+
+.descriere {
+	position: relative;
+	top: 10px;
+	background-color: #ccced1;
+	text-align: center;
+	display: block;
+	padding: 15px;
+}
+
+.descriere p {
+	font-size: 16px;
+}
+
+.dreapta {
+	width: 750px;
+	height: 500px;
+	/*background-color: blue;*/
+	display: inline-block;
+	float: left;
+}
+
+.dreapta h3 {
+	font-size: 30px;
+	margin: 10px;
+	text-align: center;
+	/*background-color: #a8001e;*/
+}
+
+.setari-personale {
+	margin: 10px;
+	/*background-color: green;*/
+	display: block;
+}
+
+.rand-nou {
+	width: 100%;
+	/*background-color: red;*/
+	margin-top: 2px;
+}
+
+.rand-nou1 {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 10px;
+}
+.rand-nou2 {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 10px;
+}
+
+.rand-nou label {
+	display: inline-block;
+	width: 160px;
+	margin-left: 10px;
+}
+
+.setari-personale input[type=text] {
+    width: 400px;
+    padding: 5px;
+    margin: 8px;
+	width: 100%;
+	display: block;
+	position: relative;
+	
+}
+.test{
+	width: 49.5%;
+	display: inline-block;
+}
+.inregistrare {
+	width: 450px;
+	height: 400px;
+	position: relative;
+	top: 100;
+	border-radius: 5px;
+	float: left;
+	padding: 10px;
+	color: #fff;
+}
+
+/*Formular1--------------------------------------*/
+.formular1-content {
+	min-height: 500px;
+	position: relative;
+	top: 70px;
+}
+
+.infos {
+	color: black;
+	font-size: 23;
+	text-align: center;
+}
+
+#imagine {
+	float:right;
+	width:200px;
+	height:200px;
+}
+
+/*Formular2--------------------------------------*/
+.formular2-content {
+	width: 100%;
+	height: auto;
+	display: block;
+	position: relative;
+	top: 70px;
+	background-image: url("../img/earth.jpg");
+    background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-attachment: fixed;
+ 	background-color: black;
+}
+
+#section1 {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	padding-right: 30px;
+}
+
+#contactChoice1 {
+	border-color: red;
+} 
+
+#section2 {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	padding-right: 30px;
+}
+
+input[type=gender] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-color: #a8001e;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-color: #a8001e;
+}
+
+/*Localizare page--------------------------------------*/
+.lista-evenimente {
+	width: 480px;
+	height: 480px;
+	float: left;
+	margin-top: 10px;
+	display: table;
+}
+
+.formular-localizare {
+	width: 500px;
+	height: 480px;
+	float: right;
+	margin-top: 10px;
+	display: table;
+}
+
+.formular-localizare textarea{
+	width: 495px;
+}
+
+.localizare-label {
+	padding-top: 15px;
+	display: block;
+	width: 100%;
+}
+
+.eveniment-style {
+	margin-top: 5px;
+	padding: 5px;
+	width: 415px;
+	float: left;
+	word-wrap: break-word;
+}
+
+.eveniment-style ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.eveniment-style ul li {
+	width: 100%;
+}
+.eveniment-delete {
+	margin-top: 5px;
+	height: 50px;
+	width: 50px;
+	float: right;
+}
+.eveniment-delete img {
+	height: 30px;
+	width: 30px;
+} 
+
+.eveniment-delete button {
+	height: 50px;
+	width: 50px;
+}
+
+.localizare-content {
+	margin: auto;
+	position: relative;
+	top: 50px;
+	display: table;
+}
+
+
+/*Error 404 page--------------------------------------*/
+
+.error404-content {
+	min-height: 500px;
+	position: relative;
+	top: 70px;
+}
+
+.error-404 h1{
+	font-size: 50px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.error-404 p{
+	font-size: 25px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+
+/*-----------------Profil*/
+.numesiprenume{
+	font-size: 30px;
+	letter-spacing: 2px;
+}
+
+.username {
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+.tipUser{
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+.profilform{
+	display: table;
+	width: 100%;
+	padding: 20px;
+}
+
+/*Trimite*/
+.trimite-content {
+	min-height: 500px;
+	position: relative;
+	top: 70px;
+}
+
+
+.stergeUseri{
+	position: relative;
+	margin-top: 30px;
+}
+.useriRow{
+	width: 70%;	
+	position: relative;
+}
+
+.useributton{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 30px;
+	width: 30px;
+}
+
+.useributton img {
+	height: 30px;
+	width: 30px;	
+}
+
+.nume-persoana {
+	font-size: 25px;
+	color: red;
+	margin: 24px;
+}
+
+/*Responsive*/
+@media only screen and (min-width: 1200px) {
+	.content-wrapper {
+		width: 1000px;
+		margin: auto;
+		position: relative;
+		padding: 10px;
+	}
+
+	.main-content, 
+	.articles-wrapper, 
+	.map-content, 
+	.persoane-content, 
+	.contact-content, 
+	.autentificare-content, 
+	#footer,
+	.profil-content {
+		top: 70px;
+	}
+	.article1 {
+		width: 100%;
+		height: 400px;
+		background-color: #0b164c;
+	}
+
+	.article2 {
+		width: 100%;
+		height: 400px;
+		background-color: #4256b5;
+	}
+
+	.article3 {
+		width: 100%;
+		height: 400px;
+		background-color: #0b164c;
+	}
+
+	.info {
+		height: 350px;
+		width: 330px;
+		display: inline-block;
+		position: relative;
+		top: 20px;
+		bottom: 20px;
+		overflow: hidden;
+		margin: auto;
+	}
+
+	.harta {
+		width: 1000px;
+		height: 400px;
+	}
+	/*Profil page----------------------------------------*/
+	.stanga {
+		width: 250px;
+		height: auto;
+		/*background-color: red;*/
+		display: inline-block;
+		float: left;
+    }
+
+	.poza {
+		width: 250px;
+		height: 200px;
+	}
+
+	.dreapta {
+		width: 750px;
+		height: auto;
+	}
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	.content-wrapper {
+	width: 900px;
+	margin: auto;
+	position: relative;
+	padding: 10px;
+	}
+
+	.article1 {
+		width: 100%;
+		height: 400px;
+		background-color: #0b164c;
+	}
+
+	.article2 {
+		width: 100%;
+		height: 400px;
+		background-color: #4256b5;
+	}
+
+	.article3 {
+		width: 100%;
+		height: 400px;
+		background-color: #0b164c;
+	}
+
+	.main-content {
+		width: 100%;
+		height: 500px;
+	}
+
+	.info {
+		height: 320px;
+		width: 297px;
+		display: inline-block;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		overflow: hidden;
+		margin: auto;
+	}
+
+	.footer-column {
+		height: auto;
+		width: 30%;
+		display: inline-block;
+	}
+
+	.footer-column a {
+		text-decoration: none;
+	}
+
+	.footer-column span{
+		font-size: 25px;
+		padding: 5px;
+	}
+
+	.footer-column span:hover {
+		color: red;
+	}
+
+	.harta {
+		width: 900px;
+		height: 400px;
+	}
+	/*Profil page----------------------------------------*/
+	.stanga {
+		width: 200px;
+		height: auto;
+		/*background-color: red;*/
+		display: inline-block;
+		float: left;
+    }
+
+    .poza {
+		width: 200px;
+		height: 200px;
+		overflow: hidden;
+	}
+
+	.poza img{
+		width: 100%;
+		height: auto;
+	}
+
+	.nume{
+		display: block;
+		background-color: #ccced1;
+		text-align: center;
+		margin-top: 10px;
+		padding: 15px;
+	}
+
+	
+	.dreapta {
+		width: 700px;
+		height: auto;
+	}
+
+
+
+	/*Info page-----------------------------*/
+	.info-content {
+		min-height: 1200px;
+	}
+	.tabel0{
+		width: 900px;
+		border: 1px solid black;
+	}
+	.tabel1{
+		width: 900px;
+		border: 1px solid black;
+	}
+	.tabel2{
+		width: 900px;
+		border: 1px solid black;
+	}
+	.tabel3{
+		width: 900px;
+		border: 1px solid black;
+	}
+
+	.lista-evenimente{
+		margin: auto;
+		width: 900px;
+	}
+
+	.tot{
+		display: table;
+	}
+
+	.eveniment-style{
+		width: 780px;
+	}
+
+	.formular-localizare{
+		margin: auto;
+		width: 900px;
+	}
+	/*Localizare page----------------------------------------*/
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.content-wrapper {
+	width: 700px;
+	margin: auto;
+	position: relative;
+	padding: 10px;
+	}
+
+	.article1 {
+		width: 100%;
+		height: 500px;
+		background-color: #0b164c;
+	}
+
+	.article2 {
+		width: 100%;
+		height: 500px;
+		background-color: #4256b5;
+	}
+
+	.article3 {
+		width: 100%;
+		height: 500px;
+		background-color: #0b164c;
+	}
+
+	.main-content {
+		width: 100%;
+		height: 750px;
+	}
+
+	.site-info {
+		width: 680px;
+		height: 300px;
+		border-radius: 5px;
+		margin: auto;
+		color: #fff;
+		position: relative;
+		top: 30px;
+	}
+
+	.login {
+		top: 10px;
+		width: 680px;
+		height: 250px;
+		background-color: #808080;
+		position: relative;
+		color: #fff;
+		margin: auto;
+	}
+
+	.info {
+		height: 450px;
+		width: 230px;
+		display: inline-block;
+		margin-top: 10px;	
+		margin-bottom: 10px;
+		overflow: hidden;
+		margin: auto;
+	}
+
+	.info img {
+		height: 200px;
+		position: absolute;
+		top: 0;				
+		bottom: 0;			
+		margin-bottom: auto;
+		margin-top: auto;
+	}
+
+	.footer-column {
+		height: auto;
+		width: 30%;
+		display: inline-block;
+	}
+
+	.footer-column a {
+		text-decoration: none;
+	}
+
+	.footer-column span{
+		font-size: 25px;
+		padding: 5px;
+	}
+
+	.footer-column span:hover {
+		color: red;
+	}
+
+	.harta {
+		width: 700px;
+		height: 400px;
+	}
+	/*Profil page----------------------------------------*/
+	.stanga {
+	width: 200px;
+	height: auto;
+	/*background-color: red;*/
+	display: inline-block;
+	float: left;
+    }
+
+    .poza {
+		width: 200px;
+		height: 200px;
+		overflow: hidden;
+	}
+
+	.poza img{
+		width: 100%;
+		height: auto;
+	}
+
+	.nume{
+		display: block;
+		background-color: #ccced1;
+		text-align: center;
+		margin-top: 10px;
+		padding: 15px;
+	}
+	
+	.dreapta {
+		width: 500px;
+		height: auto;
+	}
+
+	/*Info page-----------------------------*/
+	.info-content {
+		min-height: 1300px;
+	}
+	.tabel0{
+		width: 700px;
+		border: 1px solid black;
+	}
+	.tabel1{
+		width: 700px;
+		border: 1px solid black;
+	}
+	.tabel2{
+		width: 700px;
+		border: 1px solid black;
+	}
+	.tabel3{
+		width: 700px;
+		border: 1px solid black;
+	}
+
+	/*Localizare page----------------------------------------*/
+
+	.lista-evenimente{
+		margin: auto;
+		width: 700px;
+	}
+
+	.tot{
+		display: table;
+	}
+
+	.eveniment-style{
+		width: 600px;
+	}
+
+	.formular-localizare{
+		margin: auto;
+		width: 700px;
+	}
+
+	.inregistrare{
+		width: 100%;
+	}
+
+
+}
+@media only screen and (max-width: 768px) {
+	.content-wrapper {
+		width: 400px;
+		margin: auto;
+	}
+
+	.article1 {
+		width: 100%;
+		height: auto;
+		background-color: #0b164c;
+	}
+
+	.article2 {
+		width: 100%;
+		height: auto;
+		background-color: #4256b5;
+	}
+
+	.article3 {
+		width: 100%;
+		height: auto;
+		background-color: #0b164c;
+	}
+
+	.main-content {
+		width: 100%;
+		height: 750px;
+	}
+
+	.site-info {
+		width: 420px;
+		height: 300px;
+		border-radius: 5px;
+		margin: auto;
+		color: #fff;
+		position: relative;
+		padding: 0;
+		top: 30px;
+	}
+
+	.login {
+		width: 400px;
+		height: 250px;
+		background-color: #808080;
+		position: relative;
+		color: #fff;
+	}
+
+	.info {
+		height: 280px;
+		width: 400px;
+		display: inline-block;
+		margin-top: 10px;	
+		margin-bottom: 10px;
+		overflow: hidden;
+		margin: auto;
+	}
+
+	.info img {
+		width: 100%;
+		height: auto;			
+	}
+
+	.footer-column {
+		height: auto;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.footer-text {
+		float: left;
+		text-align: center;
+		width: 100%;
+		height: auto;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.footer-column a {
+		text-decoration: none;
+	}
+
+	.footer-column span{
+		font-size: 25px;
+		padding: 5px;
+	}
+
+	.footer-column span:hover {
+		color: red;
+	}
+
+	.harta {
+		width: 500px;
+		height: 400px;
+	}
+	/*Profil page----------------------------------------*/
+		.profil-content {
+			height: 1000px;
+		}
+
+		.stanga {
+		width: 100%;
+		height: auto;
+		/*background-color: red;*/
+		display: block;
+		float: left;
+	    }
+
+	    .poza {
+			width: 200px;
+			height: 200px;
+			overflow: hidden;
+		}
+
+		.poza img{
+			width: 100%;
+			height: auto;
+		}
+
+		.nume{
+			display: block;
+			background-color: #ccced1;
+			text-align: center;
+			margin-top: 10px;
+			padding: 15px;
+		}
+
+		
+		.dreapta {
+			width: 400px;
+			height: auto;
+		}
+
+	/*Info page-----------------------------*/
+	.info-content {
+		min-height: 1700px;
+	}
+	.tabel0{
+		width: 400px;
+		border: 1px solid black;
+	}
+	.tabel1{
+		width: 400px;
+		border: 1px solid black;
+	}
+	.tabel2{
+		width: 400px;
+		border: 1px solid black;
+	}
+	.tabel3{
+		width: 400px;
+		border: 1px solid black;
+	}
+
+	.lista-evenimente{
+		margin: auto;
+		width: 700px;
+	}
+
+	.tot{
+		display: table;
+	}
+
+	.eveniment-style{
+		width: 400px;
+	}
+
+	.formular-localizare{
+		margin: auto;
+		width: 400px;
+	}
+
+	.test{
+		width: 100%;
+	}
+	.autentificare-content{
+		height: 900px;
+	}
+	.login{
+		display: block;
+		margin: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+
+/*Codul pentru iconite -------------------*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?l5dg2w');
+  src:  url('fonts/icomoon.eot?l5dg2w#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?l5dg2w') format('truetype'),
+    url('fonts/icomoon.woff?l5dg2w') format('woff'),
+    url('fonts/icomoon.svg?l5dg2w#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cross:before {
+  content: "\ea0f";
+}
+.icon-circle-right:before {
+  content: "\ea42";
+}
+.icon-circle-left:before {
+  content: "\ea44";
+}
+.icon-google-plus:before {
+  content: "\ea8b";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}

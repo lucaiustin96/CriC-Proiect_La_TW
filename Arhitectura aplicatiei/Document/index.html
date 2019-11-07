@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cric Alert</title>
+    <link rel="stylesheet" href="public/css/scholarly.css">
+    <link rel="stylesheet" href="public/js/prismjs/themes/prism-coy.css">
+    <script src="public/js/prismjs/prism.js" defer></script>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body prefix="schema: http://schema.org/ xsd: http://www.w3.org/2001/XMLSchema# sa: https://ns.science.ai/">
+<header>
+    <p class="title">Cric</p>
+    <p class="subtitle">Construit pentru a ajuta persoanele pierdute</p>
+</header>
+<article id="what" typeof="schema:ScholarlyArticle" resource="#">
+    <h1>Ce este CriC</h1>
+    <section>
+        <ol>
+            <li property="schema:contributor" typeof="sa:ContributorRole">
+                <a property="schema:contributor" href="https://github.com/xSkyripper" typeof="schema:Person">
+                    <span property="schema:givenName">Iustin</span>
+                    <span property="schema:familyName">Luca</span>
+                </a>
+            </li>
+            <li property="schema:contributor" typeof="sa:ContributorRole">
+                <a property="schema:contributor" href="https://github.com/astonished12" typeof="schema:Person">
+                    <span property="schema:givenName">Mihaela</span>
+                    <span property="schema:familyName">Schipor</span>
+                </a>
+            </li>
+            <li property="schema:contributor" typeof="sa:ContributorRole">
+                <a property="schema:contributor" href="https://github.com/cypmaster14" typeof="schema:Person">
+                    <strong>
+                        <span property="schema:givenName">Andreea Aurora</span>
+                        <span property="schema:familyName">Savastre</span>
+                    </strong>
+                </a>
+            </li>
+            <li property="schema:contributor" typeof="sa:ContributorRole">
+                <a property="schema:contributor" href="https://github.com/lupusilviu95"
+                   typeof="schema:Person">
+                    <span property="schema:givenName">Sergiu</span>
+                    <span property="schema:familyName">Ghimp</span>
+                </a>
+            </li>
+        </ol>
+        <ol>
+            <li id="scienceai">
+                <a href="https://www.info.uaic.ro/bin/Main/" typeof="schema:Corporation">
+                    <span property="schema:name">Faculty of Computer Science</span>
+                </a>
+            </li>
+        </ol>
+    </section>
+
+    <section typeof="sa:Abstract" id="abstract">
+        <h2>Abstract</h2>
+        <p>
+          CriC reprezinta o aplicatie Web care ofera posibilitatea avertizarii in timp real a cetatenilor si mobilizarii autoritatilor in legatura cu situatiile de urgenta precum incendii, cutremure, inundatii, alunecari de teren petrecute in diferite zone
+        </p>
+    </section>
+    <section typeof="sa:Materials" id="technologies">
+        <h2>Tehnologii</h2>
+        <ul>
+            <li>HTML – pentru a reda continutul paginii</li>
+            <li>CSS – pentru a oferi stilizare continutului</li>
+            <li>PHP – utilizat pentru partea de backend deoarece este un limbaj usor de folosit, gandit pentru WEB si care permite conectarea usoara la baza de date</li>
+            <li>Baze de date: MySQL usor de utilizat cu PHP. Este o baza de date relationala usor de administrat. Nu folosim baza de date NoSQL deoarece nu este potrivita pentru aplicatia creata. NoSQL este utila atunci cand avem nevoie de flexibilitate. In cazul de fata nu e nevoie de flexibiltate ci este nevoie de doua tabele care sa retina utilizatorii si persoanele pentru alertare.</li>
+            <li>Google Fusion Table - pentru folosirea acestuia a fost nevoie si de OAuth 2.0 care permite comunicarea dintre serverul nostru si serverul Google pe baza unui fisier JSON generat de Google, care a fost introdus in aplicatia noastra si care informeaza serverul Google ca aplicatia poate sa foloseaca serviciul. A fost nevoie si de Google PHP client library pentru a conecta cele doua servere. </li>
+            <li>Google Person Finder - cautarea de informatii se face prin metoda GET. URL-ul primeste ca parametri o interogare, iar serverul Google returneaza un XML
+             adaugarea informatiilor – format XML, completat cu informatii despre persoana disparuta si trimis catre server prin metoda POST. Serverul returneaza un raspuns sub forma de XML.</li>
+            <li>Common Alerting Protocol (CAP) constituie un protocol comun de trimitere a alertelor (CAP), reprezentat de date în format XML, utilizat pentru schimbul de avertismente și urgențe între tehnologiile de alertare. CAP permite ca un mesaj de avertizare să fie difuzat în mod constant în mai multe aplicații, simultan cu multe sisteme de avertizare, cum ar fi Google Public Alerts. PAC sporește eficacitatea avertizării și simplifică modalitatea activării unui avertisment pentru cei responsabili.</li>
+            <li>PHPMailer – reprezinta cel mai popular cod pentru trimiterea de emailuri din PHP. Beneficiaza de suport integrat SMTP, oferind posibilitatea de a trimite emailuri pe platforme Windows fara un server de mail local. PHPMailer poate trimite emailuri cu multiple adrese TO, CC, BCC and Reply-to. Codul valideaza in mod automat adresele de email si le protejeaza impotriva atacurilor. </li>
+            <li>SMS Gateway –Acest serviciu se poate utiliza pentru a trimite in mod planificat un mesaj prin intermediul telefoanelor ce utilizeaza SO Android. Se creeaza un JSON care contine informatiile din mesajele SMS si pe care API trebuie sa le trimita mai departe.</li>
+
+        </ul>
+    </section>
+    <section typeof="sa:Methods" id="architecture">
+        <section id="serverless-side">
+            <p>Model-View-Controller este utilizat pentru dezvoltarea aplicatiei Cric pe care o împarte în trei părți interconectate. Aceasta se face pentru a separa reprezentările interne ale informațiilor de modalitățile în care informațiile sunt prezentate și acceptate de la utilizator. </p>
+            <p><strong>Cele trei componente sunt reprezentate astfel:</strong></p>
+            <p>Controllerul este un intermediar intre View si Model. Controlerul este compus din mai multe clase care extind o clasa de baza numita Controller, Aceste clase contin metode pentru a reda view-uri sau pentru a trimite date catre model, unde vor fi procesate. </p>
+            <p>Modelul este compus din mai multe clase care extind clasa de baza Model. Fiecare clasa extinsa are un corespondent in Controller, cu care comunica. Modelul este responsabil de logica aplicatiei, se conecteaza la baza de date si prelucreaza informatiile primite de la controler. </p>
+            <p>View-ul este format dintr-o singura clasa care este instantiata din Controller. Clasa contine o metoda care include si reda (afiseaza) o anumita pagina.</p>
+        </section>
+
+        <section id="client-side">
+            <h3>Diagrama de clase</h3>
+
+            <figure typeof="sa:Image">
+                <img src="public/resources/ClassDiagram.png">
+                <figcaption>
+                    <strong>Diagrama de clase prezinta arhitectura aplicatiei. In diagrama am inclus trei clase principale din care am extins controllere si modele.</strong>
+                </figcaption>
+            </figure>
+
+           
+
+        <section id="design-details">
+            <h3>Structura paginilor</h3>
+            <ul>
+                <li>
+                    <p>
+                        Paginile au o structura asemanatoare cu cea de la Wordpress. Fiecare pagia include un header, un footer si o pagina content-numepagina in care sunt introduse informatiile care difera de la o pagina la alta.
+                    </p>
+                </li>  
+            </ul>
+
+                
+            </section><!-- data-modelling -->
+        </section>
+
+        <section id="pagini">
+            <p>1.  ACASA – reprezinta pagina principala a aplicatiei care contine un formular ce permite utilizatorului sa se logheze. In ipoteza logarii cu succes, utilizatorul are dreptul de a adauga pe harta zonele afectate de evenimentele naturale. In caz de esec, acesta are la dispozitie mai multe incercari pentru a se loga.</p>
+            <p>
+            2.  EVENIMENTE – pagina care afiseaza o harta completata utilizand serviciul Google Fusion Table si in care se pot adauga evenimente. Aceasta este conectata cu tabelele Fusion Table direct din contul Google.</p>
+
+            <p>3.  LOCALIZARE EVENIMENTE – pagina este vizibila doar pentru userii logati si permite adaugarea evenimentelor pe harta. 
+            Pagina contine o serie de inputuri reprezentand zona afectata, tipul de eveniment, aria afectata etc. Inputurile sunt trimise catre serverul Google. Inainte de a insera in tabelul Fusion Table, Google verifica daca serverul nostru are dreptul sa insereze in tabelul in care sunt stocate informatiile.
+            Tabelul (asemanator unui tabel din baza de date) in care sunt stocate informatiile este salvat in Google Drive. Din acesta isi extrage informatiile Crisis Map.</p>
+
+            <p>4.  PERSOANE DISPARUTE - pagina vizibila pentru vizitatori. Aici exista doua posibilitati:
+            a) Cauta o persoana – se introduce numele si prenumele acesteia. Datele sunt cautate intr-un repository Google Person Finder. Accesarea repositori-ului se face prin intermediul metodei Get, care solicita serverului Google sa caute persoana respectiva. Serverul returneaza un XML cu informatii despre acea persoana, pe care il parsam.
+            b) Detin informatii despre o persoana. Se genereaza un document XML dupa un format care se gaseste in documentatia de la Person Finder. Documentul contine informatii luate din inputul trimis de un utilizator. Se returneaza tot un XML care confirma ca datele au fost inserate sau nu. Pentru trimiterea XML-ului se foloseste metoda Post.</p>
+
+            <p>5.  SETARI – pagina permite utilizatorului sa isi reseteze parola si informatiile personale. De asemenea, aceasta permite administratorului sa stearga utilizatorii.</p>
+
+            <p>6.  INREGISTRARE – pagina adauga un utilizator in baza de date. Permite si logarea (exact ca in pagina Acasa).</p>
+
+
+            <p>7.  TRIMITE ALERTA – pagina disponibila doar pentru administrator. Prin intermediul acesteia, se pot trimite alerte atat pe email cat si pe mobil (este necesara instalarea aplicatiei mobile pentru a putea trimite astfel de alerte). 
+Alertele sunt trimise catre un numar de persoane care exista deja intr-un tabel.</p>
+
+        </section>
+           
+        <section id="conclusion">
+            <h2>Concluzii</h2>
+            <p>
+               Aplicatia Web permite gestionarea situatiilor de urgenta prin integrarea serviciilor Google Crisis Map si Fusion Tables cu scopul furnizarii informatiilor de interes general cu privire la evenimentele petrecute si zonele afectate. 
+            </p>
+            <aside typeof="schema:WPSideBar">
+        </section>
+
+        
+
+    </section>
+</article>
+<footer>
+    <p>
+        Cric Alert
+        <a href="https://github.com/lucaiustin96/CriC">CriC @ Github</a>
+    </p>
+</footer>
+</body>
+</html>

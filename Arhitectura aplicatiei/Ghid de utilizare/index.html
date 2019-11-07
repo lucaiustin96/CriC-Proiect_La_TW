@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cric Alert</title>
+    <link rel="stylesheet" href="public/css/scholarly.css">
+    <link rel="stylesheet" href="public/js/prismjs/themes/prism-coy.css">
+    <script src="public/js/prismjs/prism.js" defer></script>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body prefix="schema: http://schema.org/ xsd: http://www.w3.org/2001/XMLSchema# sa: https://ns.science.ai/">
+<header>
+    <p class="title">Cric</p>
+    <p class="subtitle">Construit pentru a ajuta persoanele pierdute</p>
+</header>
+<article id="what" typeof="schema:ScholarlyArticle" resource="#">
+    <h1>Ghid de utilizare</h1>
+    <section>
+        <ol>
+            <li property="schema:contributor" typeof="sa:ContributorRole">
+                <a property="schema:contributor" href="https://github.com/xSkyripper" typeof="schema:Person">
+                    <span property="schema:givenName">Iustin</span>
+                    <span property="schema:familyName">Luca</span>
+                </a>
+            </li>
+            <li property="schema:contributor" typeof="sa:ContributorRole">
+                <a property="schema:contributor" href="https://github.com/astonished12" typeof="schema:Person">
+                    <span property="schema:givenName">Mihaela</span>
+                    <span property="schema:familyName">Schipor</span>
+                </a>
+            </li>
+            <li property="schema:contributor" typeof="sa:ContributorRole">
+                <a property="schema:contributor" href="https://github.com/cypmaster14" typeof="schema:Person">
+                    <strong>
+                        <span property="schema:givenName">Andreea Aurora</span>
+                        <span property="schema:familyName">Savastre</span>
+                    </strong>
+                </a>
+            </li>
+            <li property="schema:contributor" typeof="sa:ContributorRole">
+                <a property="schema:contributor" href="https://github.com/lupusilviu95"
+                   typeof="schema:Person">
+                    <span property="schema:givenName">Sergiu</span>
+                    <span property="schema:familyName">Ghimp</span>
+                </a>
+            </li>
+        </ol>
+        <ol>
+            <li id="scienceai">
+                <a href="https://www.info.uaic.ro/bin/Main/" typeof="schema:Corporation">
+                    <span property="schema:name">Faculty of Computer Science</span>
+                </a>
+            </li>
+        </ol>
+    </section>
+
+    <section typeof="sa:Abstract" id="abstract">
+        <h2>Descriere</h2>
+        <p>
+            Cric Alert este o aplicatie web care ofera mai multe functionalitati cum ar fi trimiterea de alerte, cautarea persoanelor disparute, vizualizarea evenimentelor de pe harta in timp real, adaugarea de evenimtente pe harta.
+        </p>
+    </section>
+
+    <section typeof="sa:Abstract" id="abstract">
+        <h2>Cum instalam CriC?</h2>
+        <p>
+            Din fericire CriC este o aplicatie usor de instalat. Tot ce trebuie sa faceti este sa adaugati folderul cu proiectul in interiorul unui folder git si sa adaugati tabelele cu utilizatori, cu numere de telefon si cu adrese de email.
+        </p>
+    </section>
+    <section typeof="sa:Abstract" id="abstract">
+        <h2>Pagina principala</h2>
+        <p>
+            Pagina principala contine o scurta descriere si un formular pentru autentificare. Formularul este vizibin numai atunci cand utilizatorul este delogat. In momentul in care acesta se autentifica, formularul dispare.
+        </p>
+    </section>
+
+    <section typeof="sa:Abstract" id="abstract">
+        <h2>Pagina Harta</h2>
+        <p>
+            Afiseaza o harta cu evenimentele.
+        </p>
+    </section>
+
+        <section typeof="sa:Abstract" id="abstract">
+        <h2>Pagina Persoane Disparute</h2>
+        <p>
+            Ofera posibilitatea utilizatorului sa ofere informatii despre o persoana pierduta sau sa caute pe cineva. Pagina este conectata la serverul google, deci informatiile pot fi incluse si de pe alte pagini. Pentru a cauta o persoana in baza de date, trebuie introduse numele si prenumele si apasat pe butonul submit. Aplicatia va afisa informatii despre persoana cautata. Pentru a adauga informatii despre o persoana trebuie sa completam formularul din sectiunea ofera informatii.
+        </p>
+    </section>
+    
+    </section>
+
+        <section typeof="sa:Abstract" id="abstract">
+        <h2>Pagina Localizare Evenimente</h2>
+        <p>
+            Ofera posibilitatea de a introduce, de a vizualiza si de a sterge evenimente introduse.
+            <ul>
+            <li>
+                Pentru a introduce elemente selectati una distre optiunile gasite in partea dreapta a paginii(Cutremure, Inundatii, Alunecari de tere, Incendii), completati campurile si apasati submit. Datele vor fi trimise catre serverul google si vor fi afisate in partea din stanga a paginii.
+            </li>
+            <li>Pentru a sterge un element apasati pe iconita din dreapta lui.</li>
+            </ul>
+        </p>
+    </section>
+
+    </section>
+
+        <section typeof="sa:Abstract" id="abstract">
+        <h2>Pagina Profil</h2>
+        <p>
+            Afiseaza informatii despre utilizator. Pentru a modifica informatiile completati campurile si apasati submit.
+        </p>
+        <p>
+            In cazul in care utilizatorul este administrator, acesta poate trimite alerte sau sterge utilizatori apassand pe cele doua butoane corespunzatoare actiunii pe care doreste sa o execute.
+            <ul>
+                <li>Dupa ce este apasat butonul Trimite Alerta se deschide o pagina noua unde se poate adauga un mesaj care va fi trimis prin sms si prin email atunci cand butonul trimite este apasat.</li>
+                <li>
+                    Pentru a sterge un utilizator, administratul trebuie sa apese pe iconita corespunzatoare fiecarui user.
+                </li>
+            </ul>
+        </p>
+
+    </section>
+
+    </section>
+
+        <section typeof="sa:Abstract" id="abstract">
+        <h2>Pagina Inregistrare</h2>
+        <p>
+            Este vizibila numai atunci cand utilizatorul este delogat.
+        </p>
+        <p>
+            Permite inregistrarea utilizatorilor cu dreptul de adminstrator. Acestia vor avea dreptul sa adauge evenimente, dar nu vor putea trimite alerte.
+        </p>
+
+    </section>
+
+    </section>
+
+        <section typeof="sa:Abstract" id="abstract">
+        <h2>Cum adaugam un adminstrator nou?</h2>
+        <p>
+            Din pagina phpmyadmin selectati tabelul Useri, iar in coloana tip modificati valoarea din user in admin pentru fiecare utilizator care va avea dreptul de admin.
+        </p>
+
+    </section>
+</article>
+<footer>
+    <p>
+        Cric Alert
+        <a href="https://github.com/lucaiustin96/CriC">CriC @ Github</a>
+    </p>
+</footer>
+</body>
+</html>
